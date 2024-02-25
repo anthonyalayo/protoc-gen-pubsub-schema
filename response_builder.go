@@ -106,7 +106,7 @@ func (b *responseBuilder) build() *pluginpb.CodeGeneratorResponse {
 }
 
 func (b *responseBuilder) buildFile(reqFileName string) (*pluginpb.CodeGeneratorResponse_File, error) {
-	respFileName := strings.TrimSuffix(reqFileName, ".proto") + ".pps"
+	respFileName := strings.TrimSuffix(reqFileName, ".proto") + ".pubsub.proto"
 	content, err := newContentBuilder(b, b.protoFiles[reqFileName]).build()
 	return &pluginpb.CodeGeneratorResponse_File{
 		Name:    &respFileName,
