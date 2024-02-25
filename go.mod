@@ -1,5 +1,4 @@
-module github.com/alpancs/protoc-gen-pubsub-schema
-replace github.com/alpancs/protoc-gen-pubsub-schema => github.com/anthonyalayo/protoc-gen-bq-schema
+module github.com/anthonyalayo/protoc-gen-bq-schema
 
 go 1.18
 
