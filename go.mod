@@ -1,4 +1,4 @@
-module github.com/anthonyalayo/protoc-gen-bq-schema
+module github.com/anthonyalayo/protoc-gen-pubsub-schema
 
 go 1.18
 
